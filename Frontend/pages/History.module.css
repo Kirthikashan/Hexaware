@@ -1,0 +1,169 @@
+/* Set the entire page background to black and make text white */
+.historyContainer {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    background-color: rgb(27, 25, 25); /* Set background color to black */
+    color: white; /* Set text color to white */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent any scrolling in the container */
+    margin-left: -100px;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 240px; /* Fixed sidebar width */
+    background-color: #1a1a1a; /* Darker background for sidebar */
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 2px solid #333; /* Border between sidebar and details */
+    overflow-y: auto; /* Vertical scrollbar for sidebar */
+    position: fixed; /* Fix sidebar position */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Full height */
+    margin: 0;
+}
+
+/* Sidebar headings */
+.sidebar h2 {
+    color: #1e90ff; /* Blue color for headings */
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+/* Sidebar items (uploaded curriculums) */
+.sidebar ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebarItem {
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #2e2e2e; /* Gray background for sidebar items */
+    border-radius: 5px;
+    cursor: pointer;
+    text-overflow: ellipsis; /* Truncate text if too long */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.sidebarItem:hover {
+    background-color: #4a4a4a; /* Lighter gray on hover */
+}
+
+/* Details container for the selected curriculum */
+.detailsContainer {
+    flex-grow: 1; /* Take up the remaining space after sidebar */
+    padding: 20px;
+    margin-left: 240px; /* Leave space for the fixed sidebar */
+    box-sizing: border-box;
+    color: white;
+    height: 100vh; /* Full height for scrolling */
+    overflow: auto; /* Allow the main content to scroll separately */
+    margin-left: -20px;
+}
+
+/* Hide default scrollbar and style a custom scrollbar */
+.detailsContainer::-webkit-scrollbar {
+    width: 0; /* Hide scrollbar */
+}
+
+/* Set a fixed position for the custom scrollbar on the right */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px; /* Width of the fixed scrollbar */
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.2); /* Translucent scrollbar track */
+    z-index: 999; /* Make sure it appears above the content */
+}
+
+/* Custom scrollbar thumb (the scroll handle) */
+body::-webkit-scrollbar-thumb {
+    background-color: #888; /* Scrollbar color */
+    border-radius: 10px;
+}
+
+body:hover::-webkit-scrollbar-thumb {
+    background-color: #555; /* Darker scrollbar color on hover */
+}
+
+/* Details container heading */
+.detailsContainer h2 {
+    color: #1e90ff; /* Blue color for heading */
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: left; /* Align heading to the left */
+}
+
+/* Emphasized text in the details */
+.detailsContainer strong {
+    font-size: 17px;
+    color: orange;
+    text-align: left; /* Align strong text to the left */
+    display: block; /* Make strong text take full width */
+}
+
+/* Generated questions list */
+.detailsContainer ul {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 0; /* Remove padding on the left */
+    color: white;
+    text-align: left; /* Align list items to the left */
+}
+
+.detailsContainer li {
+    margin-bottom: 5px;
+    color: white;
+    text-align: left; /* Align list items to the left */
+    padding-left: 0; /* Ensure no extra padding */
+}
+
+/* Optional: Add this if you want to ensure container is aligned */
+.detailsContainer {
+    text-align: left; /* Align all text inside the container to the left */
+    padding-left: 10px; /* Optional: Add some padding to the left */
+    margin-left: 40px;
+}
+
+/* Delete button styling */
+.detailsContainer button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #e74c3c; /* Red delete button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.detailsContainer button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+.backButton {
+    position: fixed; /* Fix the button at the right corner */
+    top: 20px; /* Position from the top */
+    right: 20px; /* Position from the right */
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f24de2;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    z-index: 1000; /* Ensure the button stays on top of other elements */
+    width: 9%;
+    margin-right: 1100px;
+  }
+  
+  .backButton:hover {
+    background-color: #dcdcdc;
+  }

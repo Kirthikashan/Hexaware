@@ -1,0 +1,74 @@
+/* Global styles that apply to the entire website */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Default background color */
+  color: #333; /* Default text color */
+  text-align: center;
+  line-height: 1.6;
+  min-height: 100vh; /* Full viewport height */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: auto; /* Enable vertical scroll if needed */
+  flex-wrap: nowrap;
+}
+
+/* Centering container for flex layouts */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  width: 100vw; /* Set width to full viewport */
+  padding: 0 15px; /* Add some horizontal padding */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+/* Button styling */
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  background-color: #ff00ff; /* Neon pink */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  width: 40%;
+  border-radius: 15px;
+}
+button:hover {
+  background-color: #21a1f1; /* Hover color */
+}
+
+/* Link styles */
+a {
+  color: #ff00ff; /* Link color for consistency */
+  text-decoration: none; /* Remove underline */
+}
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Input and select styles */
+input,
+select {
+  width: 80%; /* Reduced width for input fields */
+  border-radius: 5px;
+  border: 2px solid #ff00ff; /* Neon pink border */
+  padding: 10px; /* Added padding for better UX */
+  margin: 10px 0; /* Margins for spacing */
+  font-size: 16px;
+  color: white; /* Text color */
+  background-color: black;
+}
+
+input:focus,
+select:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #bed7de; /* Change border color on focus */
+}

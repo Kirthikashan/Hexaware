@@ -1,0 +1,116 @@
+.quizContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 0px;
+    margin-top: 80px;
+}
+
+.quizTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.questionContainer {
+    margin-bottom: 20px;
+}
+
+.questionText {
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.optionsContainer {
+    display: flex;
+    flex-direction: row; /* Align options in a single line */
+    margin-bottom: 20px;
+    align-items: flex-start; /* Aligns the container to the left */
+}
+
+.optionLabel {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex; /* Flex aligns the input and label text side by side */
+    align-items: center; /* Centers the radio button vertically with the text */
+    cursor: pointer;
+    color: black;
+}
+
+.optionLabel input {
+    margin-right: 10px; /* Space between the radio button and the text */
+    margin-left: 0; /* Ensure no left margin for alignment */
+    vertical-align: middle; /* Vertically aligns the radio button */
+}
+
+.submitButton, 
+.nextButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.submitButton:hover,
+.nextButton:hover {
+    background-color: #45a049;
+}
+
+.answerContainer {
+    margin-top: 20px;
+}
+
+.correctAnswer {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.resultText {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.finalScoreContainer {
+    text-align: center;
+}
+
+.finalScoreTitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.scoreText {
+    font-size: 18px;
+    color: #444;
+}
+
+.loadingMessage, 
+.errorMessage {
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}

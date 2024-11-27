@@ -1,0 +1,185 @@
+/* Container styles */
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; /* Ensure the container spans the full viewport width */
+  background-color: #0d0d0d; /* Dark background for neon contrast */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  background-image: url('https://img.freepik.com/free-vector/neon-lights-geometric-models-background_23-2148430315.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden; /* Disable scrollbars */
+  margin-left: -330px;
+}
+
+/* Main content styles */
+.main-content {
+  text-align: center;
+  max-width: 800px;
+  color: #ffffff;
+  animation: slideIn 2s ease-in-out; /* Slide-in animation */
+
+}
+
+/* Hero section styles */
+.hero-section {
+  margin-bottom: 40px;
+}
+
+/* Neon title effect with animation */
+.hero-title {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
+               0 0 20px rgba(255, 0, 255, 0.5),
+               0 0 30px rgba(255, 0, 255, 0.3),
+               0 0 40px rgba(255, 0, 255, 0.4);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+  animation: neonGlow 3s ease-in-out infinite; /* Neon glow animation */
+}
+
+/* Hover effect for title */
+.hero-title:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3),
+               0 0 40px rgba(255, 0, 255, 0.4),
+               0 0 60px rgba(255, 0, 255, 0.7),
+               0 0 80px rgba(255, 0, 255, 0.5);
+}
+
+/* Description styles */
+.hero-description {
+  font-size: 1.25rem;
+  color: white;
+  margin-bottom: 40px;
+  animation: fadeIn 2.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Neon button effect */
+.get-started-btn {
+  height: 60px;
+  width: 290px;
+  background: none;
+  border: 2px solid #ff00ff; /* Neon pink border */
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-left: 100px;
+  transition: 0.3s ease-in-out;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+               0 0 20px rgba(255, 0, 255, 0.5),
+               0 0 30px rgba(255, 0, 255, 0.4),
+               0 0 40px rgba(255, 0, 255, 0.6);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3),
+               0 0 40px rgba(255, 0, 255, 0.4),
+               0 0 60px rgba(255, 0, 255, 0.3);
+  margin-right: 120px;
+  animation: pulse 2s infinite; /* Pulsing animation */
+}
+
+/* Hover effect for button */
+.get-started-btn:hover {
+  background-color: #ff00ff; /* Neon pink background on hover */
+  color: #0d0d0d; /* Dark text color on hover */
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3),
+               0 0 40px rgba(255, 0, 255, 0.4),
+               0 0 60px rgba(255, 0, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* Footer styles */
+.footer p {
+  margin-top: 100px;
+  color:whitesmoke;
+  font-size: 0.9rem;
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  animation: fadeInUp 3s ease-in-out; /* Fade-in from the bottom animation */
+}
+
+/* Small screen responsiveness */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .get-started-btn {
+    font-size: 1rem;
+    padding: 12px 25px;
+    margin-right: 0; /* Remove the margin for smaller screens */
+  }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes neonGlow {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.2),
+                 0 0 20px rgba(255, 0, 255, 0.5),
+                 0 0 30px rgba(255, 0, 255, 0.3),
+                 0 0 40px rgba(255, 0, 255, 0.4);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4),
+                 0 0 40px rgba(255, 0, 255, 0.7),
+                 0 0 60px rgba(255, 0, 255, 0.6),
+                 0 0 80px rgba(255, 0, 255, 0.8);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

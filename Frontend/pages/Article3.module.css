@@ -1,0 +1,111 @@
+/* Article3.css */
+
+.article3Container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: -170px;
+  }
+  
+  .articleTitle {
+    text-align: center;
+    color: #007acc;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .intro {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: #007acc;
+    font-size: 1.8em;
+    margin-top: 20px;
+  }
+  
+  .benefits-list,
+  .getting-started,
+  .next-steps {
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .benefits-list li,
+  .getting-started li,
+  .next-steps li {
+    background: #e0f7fa;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #007acc;
+    transition: background 0.3s;
+  }
+  
+  .benefits-list li:hover,
+  .getting-started li:hover,
+  .next-steps li:hover {
+    background: #b2ebf2;
+  }
+  
+  .concepts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .concept {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .concept h3 {
+    color: #007acc;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .concept p {
+    margin: 0;
+  }
+  
+  h2 + p {
+    margin-bottom: 20px;
+  }
+  .gettingStarted li{
+    color: #333;
+  }
+  .gettingStarted code{
+    color: #333;
+  }
+  
+  code {
+    background: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+  .concept code{
+    color: #333;
+  }
+  
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  

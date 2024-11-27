@@ -1,0 +1,68 @@
+/* Styles for the article container */
+.articleContainer {
+    max-width: 800px; /* Maximum width for the article */
+    margin: 20px auto; /* Centering the article */
+    padding: 16px; /* Padding around the content */
+    background-color: #ffffff; /* White background for readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    font-family: Arial, sans-serif; /* Font family */
+    margin-left: -170px;
+  }
+  .title{
+    color:#4A90E2;
+  }
+  
+  /* Styles for the article title */
+  .article-container h1 {
+    font-size: 2em; /* Large title size */
+    color: #333; /* Dark gray color */
+    margin-bottom: 16px; /* Space below the title */
+  }
+  
+  /* Styles for section headings */
+  .article-container h2 {
+    font-size: 1.5em; /* Medium heading size */
+    color: #555; /* Medium gray color */
+    margin-top: 20px; /* Space above section headings */
+    margin-bottom: 10px; /* Space below section headings */
+  }
+  
+  /* Styles for paragraphs */
+  .article-container p {
+    font-size: 1em; /* Normal text size */
+    color: #666; /* Light gray color */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 12px; /* Space below paragraphs */
+  }
+  
+  /* Styles for lists */
+  .article-container ul,
+  .article-container ol {
+    margin: 10px 0 10px 20px; /* Margins for lists */
+    color: #666; /* Light gray color */
+  }
+  
+  /* Styles for list items */
+  .article-container li {
+    margin-bottom: 8px; /* Space below each list item */
+  }
+  
+  /* Styles for emphasis */
+  .article-container strong {
+    color: #333; /* Dark gray for emphasized text */
+  }
+  .subTitle{
+    color: #333;
+  }
+  .paragraph{
+    color: #333;
+
+  }
+  .list li{
+    color: #333;
+  }
+  .code{
+    color: #333;
+  }
+  

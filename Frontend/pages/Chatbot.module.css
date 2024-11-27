@@ -1,0 +1,199 @@
+/* Chatbot.css */
+
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    width: 700px; /* Adjust width as needed */
+    height: 500px; /* Fixed height for the chatbot */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin-top: 40px;  
+  
+  }
+  /* Sidebar styling */
+.sidebar {
+  width: 240px; /* Fixed sidebar width */
+  background-color: #1a1a1a; /* Darker background for sidebar */
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 2px solid #333; /* Border between sidebar and details */
+  overflow-y: auto; /* Vertical scrollbar for sidebar */
+  position: fixed; /* Fix sidebar position */
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full height */
+  margin: 0;
+}
+.sidebar h3{
+  font-size: 30px;
+  color: #1e90ff;
+  margin-top: 50px;
+}
+/* Sidebar headings */
+
+
+/* Sidebar items (uploaded curriculums) */
+.sidebar ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+.chatHeader h2{
+  font-size: 35px;
+
+}
+.historyItem {
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #2e2e2e; /* Gray background for sidebar items */
+  border-radius: 5px;
+  cursor: pointer;
+  text-overflow: ellipsis; /* Truncate text if too long */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.historyItem:hover {
+  background-color: #4a4a4a; /* Lighter gray on hover */
+}
+
+  .message span{
+    color: #000000;
+  }
+  .chatHeader {
+    
+    color: #ffffff;
+    padding: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-size: 40px;
+    text-align: center;
+    margin-left: -100px;
+  }
+  
+  .chat-window {
+    flex: 1; /* Take up remaining space */
+    padding: 16px;
+    overflow-y: auto; /* Enable scrolling */
+    background-color: #f9f9f9; /* Light background for chat messages */
+    border-bottom: 1px solid #ccc;
+    margin-left: -100px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 80%; /* Prevent messages from being too wide */
+    margin-left: 30px;
+  
+  }
+  
+  .message.user {
+    background-color: #007bff; /* User message color */
+    color: #000000;
+    align-self: flex-end; /* Align user messages to the right */
+  }
+  
+  .message.bot {
+    background-color: #e2e2e2; /* Bot message color */
+    color: #000000; /* Change text color to black */
+    align-self: flex-start; /* Align bot messages to the left */
+  }
+  
+  
+  .chatInputContainer{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    
+  }
+  .chat-input-container input{
+    width: 30px;
+  }
+  
+  .chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .chat-input:focus {
+    border-color: #007bff; /* Highlight input border on focus */
+    outline: none; /* Remove default outline */
+  }
+  .chatInputContainer {
+    display: flex;
+    padding: 10px;
+    width: 115%;
+    flex-direction: column; /* Stack input and button vertically */
+  }
+  
+  .chat-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Space between input and button */
+    font-size: 14px;
+    width: 100%; /* Full width of the container */
+  }
+  
+  .sendButton {
+    padding: 10px; /* Increase padding for better clickability */
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Button color */
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%; /* Make the button full width */
+    margin-left: 115px;
+  }
+  
+  .sendButton:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .sendButton:active {
+    background-color: #004494; /* Even darker shade when clicked */
+  }
+  .newChatButton{
+    margin-bottom: -100px;
+    width: 200px;
+    margin-right: 50px;
+  }
+  .historyItem{
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .clearButton{
+    width: 200px;
+    margin-left: 50px;
+  }
+  .backButton {
+    position: fixed; /* Fix the button at the right corner */
+    top: 20px; /* Position from the top */
+    right: 20px; /* Position from the right */
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f24de2;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 10px;
+    z-index: 1000; /* Ensure the button stays on top of other elements */
+    width: 9%;
+    margin-right: 980px;
+  }
+  
+  .backButton:hover {
+    background-color: #dcdcdc;
+  }
