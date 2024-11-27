@@ -1,0 +1,10 @@
+"Q1: Question 1: True/False - In Python programming, variables do not need to be declared before they are used."
+Options:,True,False
+Answer:,True
+Explanation:,"Unlike some other programming languages that require explicit declaration of variable types, in Python you can create and use variables without declaring their type first. The interpreter infers the data type based on the value assigned to them."
+
+"Q2: Question 2: False/True - In Python Programming Curriculum's Topic 1 (Variables and Data Types), it is mentioned that only int, float, string, list, tuple, and dictionary are supported as different purposes in python programming language?"
+Options:,True,False
+Answer:,True
+Explanation:,"The document states that ""Python supports various data types including int, float, string, list, tuple, and dictionary."" These six fundamental Python data types serve distinct roles within the language. For instance, integers (int) represent whole numbers; floats are used for decimal values; strings store textual information; lists allow ordered collections of items that can be changed later on; tuples also hold an ordered collection but cannot change once created and dictionaries map keys to their associated value pairs which makes them ideal for data retrieval."
+

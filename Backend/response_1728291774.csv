@@ -1,0 +1,10 @@
+"Q1: Question 1: True/False - In Python programming, variables do not need to be declared before they are used."
+Options:,True,False
+Answer:,True
+Explanation:,"Unlike some other programming languages that require explicit declaration of variable types, in Python the interpreter infers data type at runtime based on value assignment and does not necessitate prior declarations for usage."
+
+"Q2: Question 2: False/True - In object-oriented programming with Python, a class can inherit properties from multiple parent classes simultaneously."
+Options:,True,False
+Answer:,False
+Explanation:,"While inheritance is possible in Python (single or multi), it's limited to one superclass per subclass due to the single inheritance model of OOP languages like Python; however, this limitation does not prevent using mixins for code reuse across different but related class hierarchies."
+

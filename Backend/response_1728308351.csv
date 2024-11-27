@@ -1,0 +1,5 @@
+"Q1: Question: True/False - In Python programming, variables do not need to be declared before they are used."
+Options:,True,False
+Answer:,True
+Explanation:,"Unlike some other programming languages that require explicit declaration of variable types, in Python the interpreter infers data type at runtime based on the value assigned to a variable. Therefore, you don't have to declare it explicitly as long as there is no conflict with existing names and scope rules are followed."
+

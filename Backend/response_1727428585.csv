@@ -1,0 +1,15 @@
+"Q1: Question 1: True/False - In Python programming, variables do not need to be declared before they are used."
+Options:,True,False
+Answer:,True
+Explanation:,"Unlike some other programming languages that require explicit declaration of variable types, in Python the interpreter infers data type at runtime based on value assignment and does not necessitate prior declarations for usage."
+
+"Q2: Question 2: True/False - In Python control structures, a 'while' loop will execute its code block only once regardless of any conditions set within it."
+Options:,True,False
+Answer:,False
+Explanation:,"A while loop in Python continues to run as long as the condition specified remains true. If no break statement is used inside the loop and if there are always truthy values for the condition, then theoretically a 'while' loop could execute its code block multiple times until an external factor breaks it or changes the controlling variable(s) such that they become false when evaluated by the while condition."
+
+Q3: Question 3: True/False - Lambda functions in Python can take any number of arguments but are limited to having only one expression within them.
+Options:,True,False
+Answer:,True
+Explanation:,"A lambda function, also known as an anonymous function, is a small and restricted form of function that does not require the 'def' keyword for definition. It indeed accepts multiple arguments like regular functions do; however, it can contain just a single expression which gets evaluated and returned when the lambda function is called."
+
